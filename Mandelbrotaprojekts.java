@@ -104,16 +104,26 @@ public class Mandelbrotaprojekts extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        double sak = -1;
-        double beig = 1;
+        double asak = -1;
+        double abeig = 1;
+        double bsak = -1;
+        double bbeig = 1;
+        
         int pl = panelis.getWidth();
         int au = panelis.getHeight();
-        double matgarums = beig-sak;
-        double matvertibaplat = matgarums/pl;
-        double matvertibaaug = matgarums/au;
-        while(sak<beig){
-
+        double amatgarums = abeig-asak;
+        double bmatgarums = bbeig-bsak;
+        double matvertibaplat = amatgarums/pl;
+        double matvertibaaug = amatgarums/au;
+        
+        for (int x = 0; x < pl; x ++){
+            double a = asak + (x*matvertibaplat);
+            for (int y = 0; y < au; y ++){
+                double b = bsak + (x*matvertibaaug);
+            }
         }
+        
+        
         
 
         
